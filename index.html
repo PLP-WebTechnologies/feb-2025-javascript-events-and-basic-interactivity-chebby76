@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Interactive website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Mini login form</h1>
+      <button id="themeButton">Change Theme</button>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-button active" data-tab="form">Form</button>
+      <button class="tab-button" data-tab="gallery">Gallery</button>
+    </div>
+
+    <div class="tab-content">
+      <!-- Form Tab -->
+      <div id="form" class="tab-panel active">
+        <h2>Simple Form</h2>
+        <form id="simpleForm">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username">
+            <span class="error" id="username-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email">
+            <span class="error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <span class="error" id="password-error"></span>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="form-success" style="display:none;">
+          <p>Form submitted successfully!</p>
+          <button id="resetForm">Try Again</button>
+        </div>
+      </div>
+
+      <!-- Gallery Tab -->
+      <div id="gallery" class="tab-panel">
+        <h2>My mini Gallery</h2>
+        <div class="gallery-container">
+          <div class="gallery-image">
+            <img id="currentImage" src="pic2.jpeg" alt="Landscape">
+            <p id="imageCaption">Breaking BAD </p>
+          </div>
+          <div class="gallery-controls">
+            <button id="prevButton">Previous</button>
+            <button id="nextButton">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="eventLog">
+      <h3>Event Log</h3>
+      <div id="logEntries"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
 
