@@ -1,1 +1,172 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f4ff;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #8b5cf6;
+}
+
+button {
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #7c3aed;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab-button {
+  background: none;
+  color: #666;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  color: #8b5cf6;
+  border-bottom: 2px solid #8b5cf6;
+}
+
+.tab-panel {
+  display: none;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error {
+  color: #e11d48;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.gallery-container {
+  text-align: center;
+}
+
+.gallery-image {
+  margin-bottom: 15px;
+}
+
+.gallery-image img {
+  max-width: 350;
+  height: 100vh;
+  border-radius: 8px;
+
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#eventLog {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.log-entry {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+/* Theme variants */
+body.blue-theme {
+  background-color: #eef2ff;
+}
+
+body.blue-theme h1,
+body.blue-theme .tab-button.active {
+  color: #3b82f6;
+}
+
+body.blue-theme button {
+  background-color: #3b82f6;
+}
+
+body.blue-theme button:hover {
+  background-color: #2563eb;
+}
+
+body.orange-theme {
+  background-color: #fff7ed;
+}
+
+body.orange-theme h1,
+body.orange-theme .tab-button.active {
+  color: #f97316;
+}
+
+body.orange-theme button {
+  background-color: #f97316;
+}
+
+body.orange-theme button:hover {
+  background-color: #ea580c;
+}
+
